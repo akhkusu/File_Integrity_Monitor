@@ -5,7 +5,7 @@
 
 
 <h2>Description</h2>
-File Intergrity Monitor created with Powershell Script
+File Integrity Monitor created with Powershell Script
 <br />
 
 
@@ -21,20 +21,22 @@ File Intergrity Monitor created with Powershell Script
 <h2>Program walk-through:</h2>
 
 <p align="center">
- First, I implemented key generations, encryption, and decryption without using the RSA module:
+ This powershell script can be used to monitor the integrity of target files on Windows Machine.
  <br/>
-<img src="img/Screenshot 2023-08-12 142542.png" height="80%" width="80%" alt="without_rsa_module"/>
+<img src="img/Screenshot 2023-09-10 141242.png" height="80%" width="80%" alt="without_rsa_module"/>
 <br />
+
 <br />
-[Link to Code](https://github.com/akhkusu/RSA-with-python/blob/5d6532f54762e5eb0d501162d01701c803a7c224/without_RSA_module.py)
+It firsts creates a baseline file which contains a file path and its hash value for each of the target files. <br/>
+<img src="img/Screenshot 2023-09-10 141315.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+
+
 <br />
-Second, I implemented the same functions and signature using the RSA module  <br/>
-<img src="img/Screenshot 2023-08-13 144021.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+When some event, modification, deletion or creation of a new file, happens, it displays alarm on the terminal. Also it outputs those events on the log CSV file  <br/>
+<img src="img/Screenshot 2023-09-10 141750.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<br />
-[Link to Code](https://github.com/akhkusu/RSA-with-python/blob/628bc744e682e978b5be5ab7da7113ac78155a63/without_RSA_module.py)
-<br />
+
 </p>
 
 <!--
