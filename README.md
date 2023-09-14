@@ -5,7 +5,7 @@
 
 
 <h2>Description</h2>
-File Integrity Monitor created with Powershell Script
+This tool enables users to establish a baseline for their files by calculating and storing hash values for each file It then continuously monitors these files, recalculating their hash values. If any unintended alterations occur to the monitored files, the tool can detect these changes, record the details of the alterations, and log these events. 
 <br />
 
 
